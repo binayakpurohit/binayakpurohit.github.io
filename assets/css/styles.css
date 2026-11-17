@@ -286,3 +286,5 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .project--featured::before { transform: scaleX(1); }
 .live-dot { display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: #22c55e; vertical-align: 1px; animation: pulse 2s infinite; }
 .project__links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 16px; font-weight: 600; font-size: .92rem; }
+.project--featured p { flex: none; }
+.project--featured .tags { margin-top: auto; }
