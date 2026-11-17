@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261117c">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261117d">
   <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 </head>
 <body>
@@ -290,18 +290,33 @@
           </article>
         </div>
         <div class="side reveal">
-          <p class="side__label">Outside work</p>
+          <p class="side__label">Outside work · Side project</p>
           <article class="side__card">
-            <span class="side__icon" aria-hidden="true">📱</span>
-            <div class="side__text">
-              <h3>Goodmins <span class="side__live"><span class="live-dot" aria-hidden="true"></span>Live on PhonePe Appstore</span></h3>
-              <p>A personal Android app where good habits — sleep, walks, reading, meals — earn points, and each point buys a minute on the apps you want to use less. Built in Kotlin entirely with AI, through prompting and iterating with coding agents (vibe coding).</p>
-              <ul class="tags"><li>Kotlin</li><li>Android</li><li>Built with AI</li></ul>
+            <div class="side__main">
+              <div class="side__head">
+                <span class="side__icon" aria-hidden="true">📱</span>
+                <div>
+                  <h3>Goodmins</h3>
+                  <p class="side__tagline">Good habits earn good minutes</p>
+                </div>
+                <span class="side__live"><span class="live-dot" aria-hidden="true"></span>Live on PhonePe Appstore</span>
+              </div>
+              <p class="side__desc">A personal Android app where sleep, walks, reading and meals earn points — and each point buys a minute on the apps you want to use less. Built in Kotlin entirely with AI, through prompting and iterating with coding agents (vibe coding).</p>
+              <div class="side__foot">
+                <ul class="tags"><li>Kotlin</li><li>Android</li><li>Built with AI</li><li>Privacy-first</li></ul>
+                <div class="side__links">
+                  <a class="side__btn side__btn--solid" href="https://www.phonepeappstore.com/apps/productivity/goodmins/app.goodmins/" target="_blank" rel="noopener">Get the app ↗</a>
+                  <a class="side__btn" href="https://goodmins.github.io/" target="_blank" rel="noopener">Website ↗</a>
+                </div>
+              </div>
             </div>
-            <div class="side__links">
-              <a href="https://goodmins.github.io/" target="_blank" rel="noopener">Website ↗</a>
-              <a href="https://www.phonepeappstore.com/apps/productivity/goodmins/app.goodmins/" target="_blank" rel="noopener">Get the app ↗</a>
-            </div>
+            <ul class="side__demo" aria-label="Example points">
+              <li><span>🌙 In bed on time</span><b class="plus">+20</b></li>
+              <li><span>👟 20-min walk</span><b class="plus">+30</b></li>
+              <li><span>📖 A story before bed</span><b class="plus">+15</b></li>
+              <li><span>📱 30 min Instagram</span><b class="minus">−30</b></li>
+              <li class="side__rule">1 point = 1 minute</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -385,6 +400,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=20261117c" defer></script>
+  <script src="assets/js/main.js?v=20261117d" defer></script>
 </body>
 </html>
