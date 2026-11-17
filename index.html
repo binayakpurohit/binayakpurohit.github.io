@@ -234,63 +234,80 @@
           <h2>Things I've built</h2>
         </header>
         <div class="projects">
-          <article class="project project--featured reveal">
-            <div class="feat__body">
-              <div class="project__top"><span class="project__icon" aria-hidden="true">📱</span><span class="project__tag"><span class="live-dot" aria-hidden="true"></span>Live · Mobile app</span></div>
-              <h3>Goodmins — good habits earn screen time</h3>
-              <p>A personal Android app where sleeping on time, walking, reading and eating well earn points — and one point buys one minute on the apps you want to use less. Bedtime goals tighten gradually, weekly and monthly reports track progress, and everything stays on the phone: free, no ads, no account.</p>
-              <p>Built in Kotlin entirely with AI — shipped end-to-end through prompting and iterating with AI coding agents (vibe coding), without hand-writing the code.</p>
-              <ul class="tags"><li>Kotlin</li><li>Android</li><li>Built with AI</li><li>Vibe coding</li><li>Privacy-first</li></ul>
-              <div class="project__links">
-                <a href="https://goodmins.github.io/" target="_blank" rel="noopener">Website ↗</a>
-                <a href="https://www.phonepeappstore.com/apps/productivity/goodmins/app.goodmins/" target="_blank" rel="noopener">Get the app ↗</a>
-              </div>
-            </div>
-            <div class="feat__visual" aria-hidden="true">
-              <div class="phone">
-                <div class="phone__notch"></div>
-                <p class="phone__label">Today</p>
-                <p class="phone__score">70<span>min earned</span></p>
-                <ul class="phone__list">
-                  <li><span>🌙 In bed on time</span><b class="plus">+20</b></li>
-                  <li><span>👟 20-min walk</span><b class="plus">+30</b></li>
-                  <li><span>📖 A story before bed</span><b class="plus">+15</b></li>
-                  <li><span>💧 2.5 L of water</span><b class="plus">+5</b></li>
-                  <li><span>📱 30 min Instagram</span><b class="minus">−30</b></li>
-                </ul>
-                <p class="phone__foot">1 point = 1 minute</p>
-              </div>
+          <article class="project reveal" style="--c1:#38bdf8;--c2:#818cf8">
+            <div class="project__banner"><span class="project__icon" aria-hidden="true">🔌</span><span class="project__badge">Runs fully local</span></div>
+            <div class="project__body">
+              <p class="project__tag">Worksoft · AI · C#</p>
+              <h3>MCP server for Certify</h3>
+              <p class="project__desc">A C# Model Context Protocol server that lets a local LLM assistant work with Certify through its REST APIs.</p>
+              <ul class="project__points"><li>Built on the official ModelContextProtocol C# SDK</li><li>Exposes Certify's REST APIs as agent tools</li><li>Local model with user-scoped auth</li></ul>
+              <ul class="tags"><li>C#</li><li>MCP</li><li>LLM agents</li></ul>
             </div>
           </article>
-          <article class="project reveal">
-            <div class="project__top"><span class="project__icon" aria-hidden="true">🔌</span><span class="project__tag">AI · C#</span></div>
-            <h3>MCP server for Certify</h3>
-            <p>A C# Model Context Protocol server built on the official SDK that exposes Certify's REST APIs to a local LLM assistant — designed to run fully locally with user-scoped auth.</p>
-            <ul class="tags"><li>ModelContextProtocol SDK</li><li>.NET</li><li>LLM agents</li></ul>
+          <article class="project reveal" style="--c1:#f97316;--c2:#f43f5e">
+            <div class="project__banner"><span class="project__icon" aria-hidden="true">🤖</span><span class="project__badge">Shared team-wide</span></div>
+            <div class="project__body">
+              <p class="project__tag">Worksoft · Agentic workflow</p>
+              <h3>Claude Code engineering skills</h3>
+              <p class="project__desc">Agentic workflows that take engineering tickets from triage all the way to a reviewed fix.</p>
+              <ul class="project__points"><li>Ticket triage → fix → pull request → docs</li><li>Automated hotfix patch build and packaging</li><li>Shared through Worksoft's internal AI Forum</li></ul>
+              <ul class="tags"><li>Claude Code</li><li>Automation</li><li>DevEx</li></ul>
+            </div>
           </article>
-          <article class="project reveal">
-            <div class="project__top"><span class="project__icon" aria-hidden="true">🤖</span><span class="project__tag">Agentic workflow</span></div>
-            <h3>Claude Code engineering skills</h3>
-            <p>Custom skills that take a Jira ticket through triage, fix, pull request and documentation, plus automation for building and packaging hotfix patches — shared with the team via the internal AI Forum.</p>
-            <ul class="tags"><li>Claude Code</li><li>Automation</li><li>DevEx</li></ul>
+          <article class="project reveal" style="--c1:#8b5cf6;--c2:#6366f1">
+            <div class="project__banner"><span class="project__icon" aria-hidden="true">🚀</span><span class="project__badge">120+ projects</span></div>
+            <div class="project__body">
+              <p class="project__tag">Worksoft · Modernisation</p>
+              <h3>.NET 8 → .NET 10 migration</h3>
+              <p class="project__desc">Part of moving a large enterprise codebase from .NET Framework 4.8 to .NET 8 and .NET 10.</p>
+              <ul class="project__points"><li>Third-party SAP connector compatibility analysis</li><li>Designed the rollForward strategy</li><li>PowerShell tooling to patch runtime configs at customer sites</li></ul>
+              <ul class="tags"><li>.NET 10</li><li>PowerShell</li><li>SAP</li></ul>
+            </div>
           </article>
-          <article class="project reveal">
-            <div class="project__top"><span class="project__icon" aria-hidden="true">🔐</span><span class="project__tag">Security</span></div>
-            <h3>Client-side key rotation</h3>
-            <p>Re-encrypts stored secrets and bulk database records against a dedicated cryptography service, so encryption keys can be rotated safely.</p>
-            <ul class="tags"><li>C#</li><li>Cryptography</li><li>SQL Server</li></ul>
+          <article class="project reveal" style="--c1:#22c55e;--c2:#14b8a6">
+            <div class="project__banner"><span class="project__icon" aria-hidden="true">🔐</span><span class="project__badge">Security</span></div>
+            <div class="project__body">
+              <p class="project__tag">Worksoft · Data &amp; crypto</p>
+              <h3>Client-side key rotation</h3>
+              <p class="project__desc">Key rotation for Certify's stored secrets, built against a dedicated cryptography service.</p>
+              <ul class="project__points"><li>Re-encrypts stored secrets</li><li>Bulk re-encryption of database records</li><li>Integrates with a dedicated crypto service</li></ul>
+              <ul class="tags"><li>C#</li><li>Cryptography</li><li>SQL Server</li></ul>
+            </div>
           </article>
-          <article class="project reveal">
-            <div class="project__top"><span class="project__icon" aria-hidden="true">🚀</span><span class="project__tag">Modernisation</span></div>
-            <h3>.NET 8 → .NET 10 migration tooling</h3>
-            <p>Compatibility analysis for third-party SAP connectors, a rollForward strategy, and PowerShell tooling that patches runtime configs at customer sites.</p>
-            <ul class="tags"><li>.NET 10</li><li>PowerShell</li><li>SAP</li></ul>
+          <article class="project reveal" style="--c1:#0ea5e9;--c2:#22d3ee">
+            <div class="project__banner"><span class="project__icon" aria-hidden="true">🛠️</span><span class="project__badge">Customer impact</span></div>
+            <div class="project__body">
+              <p class="project__tag">Worksoft · Production support</p>
+              <h3>Escalations &amp; hotfix delivery</h3>
+              <p class="project__desc">Root-causing customer escalations and shipping cumulative hotfixes for 14.5.x releases.</p>
+              <ul class="project__points"><li>Diagnosed IIS 500.30, SqlClient and connection-string issues</li><li>Built cumulative hotfix distributions</li><li>Proposed a standard patch process (checklist + readme)</li></ul>
+              <ul class="tags"><li>IIS</li><li>SQL Server</li><li>Debugging</li></ul>
+            </div>
           </article>
-          <article class="project reveal">
-            <div class="project__top"><span class="project__icon" aria-hidden="true">🧪</span><span class="project__tag">AI · Testing</span></div>
-            <h3>AI-assisted test creation</h3>
-            <p>Contributing to an agent that turns plain-English intent into validated test-automation assets inside an enterprise automation platform.</p>
-            <ul class="tags"><li>LLM agents</li><li>RAG</li><li>Test automation</li></ul>
+          <article class="project reveal" style="--c1:#ec4899;--c2:#a855f7">
+            <div class="project__banner"><span class="project__icon" aria-hidden="true">🧪</span><span class="project__badge">AI · Testing</span></div>
+            <div class="project__body">
+              <p class="project__tag">Worksoft · AI</p>
+              <h3>AI-assisted test creation</h3>
+              <p class="project__desc">Contributing to an agent that turns plain-English intent into validated test-automation assets.</p>
+              <ul class="project__points"><li>Natural language in, automation assets out</li><li>Validates what the agent generates</li><li>LLM agents with retrieval (RAG)</li></ul>
+              <ul class="tags"><li>LLM agents</li><li>RAG</li><li>Test automation</li></ul>
+            </div>
+          </article>
+        </div>
+        <div class="side reveal">
+          <p class="side__label">Outside work</p>
+          <article class="side__card">
+            <span class="side__icon" aria-hidden="true">📱</span>
+            <div class="side__text">
+              <h3>Goodmins <span class="side__live"><span class="live-dot" aria-hidden="true"></span>Live on PhonePe Appstore</span></h3>
+              <p>A personal Android app where good habits — sleep, walks, reading, meals — earn points, and each point buys a minute on the apps you want to use less. Built in Kotlin entirely with AI, through prompting and iterating with coding agents (vibe coding).</p>
+              <ul class="tags"><li>Kotlin</li><li>Android</li><li>Built with AI</li></ul>
+            </div>
+            <div class="side__links">
+              <a href="https://goodmins.github.io/" target="_blank" rel="noopener">Website ↗</a>
+              <a href="https://www.phonepeappstore.com/apps/productivity/goodmins/app.goodmins/" target="_blank" rel="noopener">Get the app ↗</a>
+            </div>
           </article>
         </div>
       </div>
@@ -302,22 +319,23 @@
         <header class="section__head reveal">
           <p class="kicker">Toolbox</p>
           <h2>Skills &amp; stack</h2>
+          <p class="section__sub">Highlighted skills are the ones I use every day.</p>
         </header>
         <div class="skills">
-          <div class="skillset reveal">
-            <h3>Languages &amp; frameworks</h3>
-            <ul class="pills"><li>C#</li><li>.NET Framework 4.8</li><li>.NET 8</li><li>.NET 10</li><li>ASP.NET Core</li><li>WinForms</li><li>Entity Framework</li><li>Java</li><li>Spring Boot</li><li>React</li><li>JavaScript</li></ul>
+          <div class="skillset reveal" style="--c1:#38bdf8;--c2:#818cf8">
+            <div class="skillset__head"><span class="skillset__icon" aria-hidden="true">⚙️</span><h3>Languages &amp; frameworks</h3></div>
+            <ul class="pills"><li class="core">C#</li><li class="core">.NET Framework 4.8</li><li class="core">.NET 8</li><li class="core">.NET 10</li><li>ASP.NET Core</li><li>WinForms</li><li>Entity Framework</li><li>Java</li><li>Spring Boot</li><li>React</li><li>JavaScript</li></ul>
           </div>
-          <div class="skillset reveal">
-            <h3>AI &amp; agents</h3>
-            <ul class="pills"><li>Model Context Protocol</li><li>Claude Code</li><li>AI Agents</li><li>LLM agents</li><li>RAG</li><li>Local models</li></ul>
+          <div class="skillset reveal" style="--c1:#f97316;--c2:#f43f5e">
+            <div class="skillset__head"><span class="skillset__icon" aria-hidden="true">🧠</span><h3>AI &amp; agents</h3></div>
+            <ul class="pills"><li class="core">Model Context Protocol</li><li class="core">Claude Code</li><li>AI Agents</li><li>LLM agents</li><li>RAG</li><li>Local models</li></ul>
           </div>
-          <div class="skillset reveal">
-            <h3>Data &amp; infrastructure</h3>
-            <ul class="pills"><li>Microsoft SQL Server</li><li>Stored Procedures</li><li>MySQL</li><li>PostgreSQL</li><li>IIS</li><li>AWS (EC2, S3)</li></ul>
+          <div class="skillset reveal" style="--c1:#22c55e;--c2:#14b8a6">
+            <div class="skillset__head"><span class="skillset__icon" aria-hidden="true">🗄️</span><h3>Data &amp; infrastructure</h3></div>
+            <ul class="pills"><li class="core">Microsoft SQL Server</li><li>Stored Procedures</li><li>MySQL</li><li>PostgreSQL</li><li>IIS</li><li>AWS (EC2, S3)</li></ul>
           </div>
-          <div class="skillset reveal">
-            <h3>Tools &amp; practice</h3>
+          <div class="skillset reveal" style="--c1:#8b5cf6;--c2:#6366f1">
+            <div class="skillset__head"><span class="skillset__icon" aria-hidden="true">🧰</span><h3>Tools &amp; practice</h3></div>
             <ul class="pills"><li>Azure DevOps</li><li>Git</li><li>PowerShell</li><li>Agile</li><li>Production debugging</li><li>Hotfix delivery</li></ul>
           </div>
         </div>
